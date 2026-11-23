@@ -1,6 +1,6 @@
 # solidAV Tools
 
-Fertige Apps von solidAV Medientechnik für Livestream und Veranstaltungstechnik (macOS, Apple Silicon).
+Fertige Apps von solidAV Medientechnik für Livestream und Veranstaltungstechnik (macOS mit Apple-Chip und Windows 10/11, 64 Bit).
 
 | App | Wofür |
 |---|---|
@@ -11,7 +11,7 @@ Fertige Apps von solidAV Medientechnik für Livestream und Veranstaltungstechnik
 | Bridge | Kreuzschiene NDI · OMT · DeckLink |
 | LipSync | Bild/Ton-Versatz am vMix-Ausgang messen |
 
-## Installation
+## Installation – Mac (Apple-Chip, M1 oder neuer)
 
 1. Unter **Releases** die neueste `solidAV-Launcher-…-mac-arm64.zip` laden und doppelklicken.
 2. `solidAV Launcher.app` in den Ordner **Programme** ziehen.
@@ -21,8 +21,17 @@ Fertige Apps von solidAV Medientechnik für Livestream und Veranstaltungstechnik
 4. Im Launcher bei jedem gewünschten Tool auf **Installieren** klicken. Updates erscheinen dort automatisch.
 5. Beim ersten Start eines Tools nach dem Zugriff auf das **lokale Netzwerk** gefragt: **Erlauben** (sonst werden keine NDI/OMT-Quellen gefunden).
 
+## Installation – Windows 10/11 (64 Bit)
+
+1. Unter **Releases** die neueste `solidAV-Launcher-Setup-…-win-x64.exe` laden und starten.
+2. Die Apps sind nicht signiert. Windows zeigt „Der Computer wurde durch Windows geschützt“: auf **Weitere Informationen › Trotzdem ausführen** klicken.
+3. Im Launcher bei jedem gewünschten Tool auf **Installieren** klicken (landet unter `%LOCALAPPDATA%\Programs\solidAV`). Updates erscheinen dort automatisch.
+4. Beim ersten Start eines Tools fragt die Windows-Firewall nach Netzwerkzugriff: **Private Netzwerke** erlauben (sonst keine NDI/OMT-Quellen).
+
+Ohne Installer: `solidAV-Launcher-…-win-x64.zip` entpacken und `solidAV Launcher.exe` starten.
+
 ## Was zusätzlich nötig ist
 
-- **NDI:** die kostenlosen NDI Tools von ndi.video (bringen die NDI-Bibliothek mit). OMT ist in den Apps enthalten.
+- **NDI:** die kostenlosen NDI Tools von ndi.video (bringen die NDI-Bibliothek mit, auf Windows die „NDI Runtime“). OMT ist in den Apps enthalten.
 - **Bridge mit SDI:** Blackmagic Desktop Video (Treiber für DeckLink-Karten bzw. UltraStudio).
 - **Stream Deck (Decks):** Die Elgato-Stream-Deck-App muss geschlossen sein, solange Decks läuft.
